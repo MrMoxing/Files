@@ -1,0 +1,54 @@
+{
+  "facts": [{
+    "@type": "type.googleapis.com/BatteryLevelChanged",
+    "level": 100,
+    "customContextDataKey": {
+    },
+    "id": "F-82b18f91-20f7-445e-8a0c-d2af3d9847d7"
+  }],
+  "conditions": [{
+    "@type": "type.googleapis.com/ChargeState",
+    "requireIsCharge": true,
+    "customContextDataKey": {
+    },
+    "id": "C-467c52a2-3def-49ff-a5e0-c2d2c5a89ecf"
+  }, {
+    "@type": "type.googleapis.com/AppIsRunning",
+    "pkgs": [{
+      "pkgName": "com.tencent.tmgp.sgame"
+    }, {
+      "pkgName": "com.miHoYo.Yuanshen"
+    }],
+    "customContextDataKey": {
+    },
+    "isInvert": true,
+    "id": "C-09352c50-d95c-4331-b4e6-902efcde9df5"
+  }],
+  "actions": [{
+    "@type": "type.googleapis.com/PostNotification",
+    "tag": "PowerMessage",
+    "title": "充满提示",
+    "message": "当前已充满，请及时拔出电源",
+    "isImportant": true,
+    "smallIcon": "send-plane-2-fill",
+    "sound": true,
+    "customContextDataKey": {
+    },
+    "id": "A-84a91072-f725-4d30-aeaf-3b9c5b192a59"
+  }],
+  "id": "rule-e540b143-1980-403e-8e1b-ded0702aeeb9",
+  "lastUpdateTime": "1713666692672",
+  "createTime": "1689136121933",
+  "author": {
+    "name": "ShortX"
+  },
+  "title": "充满提示",
+  "description": " ",
+  "isEnabled": true,
+  "hook": {
+  },
+  "quit": {
+  }
+}
+###------###
+{"type":"rule"}
